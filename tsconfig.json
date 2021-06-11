@@ -23,7 +23,7 @@
   "baseUrl": "src",
   "paths": {
     "@common/*": ["common/*"],
-    "@features/*": ["common/*"]
+    "@features/*": ["features/*"]
   },
   "include": [
     "src"
