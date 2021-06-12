@@ -1,0 +1,14 @@
+.cardGrid {
+    text-align: center;
+    width: 33%;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+}

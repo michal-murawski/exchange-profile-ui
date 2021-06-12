@@ -1,5 +1,7 @@
 import { Feature } from "../types/feature";
 
-const feature: Feature = {};
+const feature: Feature = {
+  contentRoutes: [],
+};
 
 export const core = feature;

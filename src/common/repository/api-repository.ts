@@ -23,30 +23,22 @@ const portfolioApiClient = axios.create({
 
 export const profileRepository = {
   getProfiles(): Promise<GetProfilesResponseDTO> {
-    return profileApiClient
-      .get<GetProfilesResponseDTO>("")
-      .then(({ data }) => data);
+    return profileApiClient.get<GetProfilesResponseDTO>("").then(({ data }) => data);
   },
 };
 
 export const portfolioRepository = {
-  getSpotBalances(
-    params: GetPortfolioBalanceRequestParams
-  ): Promise<GetPortfolioBalanceResponse> {
+  getSpotBalances(params: GetPortfolioBalanceRequestParams): Promise<GetPortfolioBalanceResponse> {
     return portfolioApiClient
       .get<GetPortfolioBalanceResponse>("/spot/balance", { params })
       .then(({ data }) => data);
   },
-  getFuturesBalances(
-    params: GetPortfolioBalanceRequestParams
-  ): Promise<GetPortfolioBalanceResponse> {
+  getFuturesBalances(params: GetPortfolioBalanceRequestParams): Promise<GetPortfolioBalanceResponse> {
     return portfolioApiClient
       .get<GetPortfolioBalanceResponse>("/futures/balance", { params })
       .then(({ data }) => data);
   },
-  getPerpetualPositions(
-    params: GetPerpetualPositionRequestParams
-  ): Promise<GetPerpetualPositionResponseDTO> {
+  getPerpetualPositions(params: GetPerpetualPositionRequestParams): Promise<GetPerpetualPositionResponseDTO> {
     return portfolioApiClient
       .get<GetPerpetualPositionResponseDTO>("/perpetual/position", { params })
       .then(({ data }) => data);

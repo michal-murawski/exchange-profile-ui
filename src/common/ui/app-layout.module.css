@@ -1,0 +1,16 @@
+.logo {
+    height: 70px;
+}
+
+.header {
+    background: white;
+    padding: 0;
+}
+
+.mainLayout {
+    min-height: 100vh;
+}
+
+.appContent {
+    margin: 10px;
+}

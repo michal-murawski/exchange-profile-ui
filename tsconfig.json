@@ -1,5 +1,7 @@
 {
+  "extends": "./tsconfig.extend.json",
   "compilerOptions": {
+    "baseUrl": "./src",
     "target": "es5",
     "lib": [
       "dom",
@@ -19,11 +21,6 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
-  },
-  "baseUrl": "src",
-  "paths": {
-    "@common/*": ["common/*"],
-    "@features/*": ["features/*"]
   },
   "include": [
     "src"
