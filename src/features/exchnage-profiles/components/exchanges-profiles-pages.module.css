@@ -1,14 +1,16 @@
-.cardGrid {
-    text-align: center;
-    width: 33%;
-}
-.cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.menu {
+    background: white;
+    max-width: 350px;
+    margin-right: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.card {
-    width: 300px;
-    margin: 10px;
+.item {
+    height: auto !important;
+}
+
+.detailsWrapper {
+    flex: 1;
+    overflow-y: auto;
 }

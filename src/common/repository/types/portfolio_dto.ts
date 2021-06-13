@@ -1,3 +1,7 @@
+/**
+ * Every single entity from our servers is marked as DTO in order to distinguish UI and backend relations.
+ */
+
 export type PortfolioBalanceDTO = {
   profile_id: number;
   asset: string;

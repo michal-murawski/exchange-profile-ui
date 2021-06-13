@@ -4,6 +4,7 @@ export enum ProfileSourceKindType {
 
 export enum ProfileExchangeKindType {
   SPOT = "SPOT",
+  FUTURES = "FUTURES",
 }
 
 export type ProfileDTO = {

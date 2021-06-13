@@ -10,8 +10,7 @@ import {
 const BASE_PATH = "http://localhost:3004/api/v1";
 
 /**
- * Efficient assumption:
- * Access to external api definitions from npm library
+ * Just an example how to handle multiple paths and services to call.
  */
 const profileApiClient = axios.create({
   baseURL: `${BASE_PATH}/extended/profile`,
@@ -22,8 +21,8 @@ const portfolioApiClient = axios.create({
 });
 
 export const profileRepository = {
-  getProfiles(): Promise<GetProfilesResponseDTO> {
-    return profileApiClient.get<GetProfilesResponseDTO>("").then(({ data }) => data);
+  getActiveProfiles(): Promise<GetProfilesResponseDTO> {
+    return profileApiClient.get<GetProfilesResponseDTO>("/active").then(({ data }) => data);
   },
 };
 

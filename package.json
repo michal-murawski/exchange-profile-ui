@@ -34,7 +34,8 @@
     "test": "craco test",
     "eject": "craco eject",
     "lint": "eslint src/**/*.{ts,tsx} --fix",
-    "server": "json-server --watch db.json --routes routes.json --port 3004 --delay 1000"
+    "server": "json-server --watch db.json --routes routes.json --port 3004 --delay 1000",
+    "serve-app": "json-server --watch db.json --routes routes.json --port 3004 --delay 1000 --static build"
   },
   "browserslist": {
     "production": [

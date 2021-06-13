@@ -8,9 +8,11 @@
 }
 
 .mainLayout {
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .appContent {
     margin: 10px;
+    display: flex;
 }

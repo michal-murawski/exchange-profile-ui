@@ -1,6 +1,6 @@
 {
   "/api/v1/*": "/$1",
-  "/extended/profile": "/profile",
+  "/extended/profile/active": "/profile?profile.disabled=false",
   "/portfolio/spot/balance\\?profileId=:profileId": "/spotBalance?profile_id=:profileId",
   "/portfolio/futures/balance\\?profileId=:profileId": "/futuresBalance?profile_id=:profileId",
   "/portfolio/perpetual/position\\?profileId=:profileId": "/perpetualPosition?profile_id=:profileId"
